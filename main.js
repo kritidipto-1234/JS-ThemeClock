@@ -1,4 +1,5 @@
 'use strict'
+
 const colourPalette=document.querySelector('.color_palette');
 const currentWidgetPalette=document.querySelector('.current_widget_palette');
 

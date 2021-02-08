@@ -6,6 +6,10 @@
     font-weight: bolder;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body{
     background-color: rgb(4, 77, 77);
     display: flex;
@@ -68,6 +72,7 @@ body{
     margin:20px;
 }
 
+/* clock */
 .clock{
     display: flex;
     flex-direction: column;
@@ -89,3 +94,61 @@ body{
     margin:50px;
     font-size: 60px;
 }
+/* clock */
+
+
+
+/* stop watch */
+.stopwatch{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stop_time{
+    font-size: 60px;
+
+}
+.control{
+    display: flex;
+    min-width:180px;
+    justify-content: space-between;
+    color: gray;
+    margin: 35px;
+}
+.control>div{
+    border-radius: 50%;
+    width:70px;
+    height:70px;
+
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:3px solid gray;
+    transition: all 0.2s;
+}
+.control>div:hover{
+    cursor: pointer;
+    color: white;
+    border:3px solid white;
+}
+
+.lapList{
+    max-height: 200px;
+    overflow:scroll;
+    width:240px;
+}
+.laps{
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    border-bottom: 3px solid grey;
+    padding: 15px;
+}
+.laps>span{
+    font-size: 24px;
+    font-weight: bolder;
+}
+/* stop watch */

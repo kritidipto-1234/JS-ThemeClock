@@ -1,4 +1,6 @@
 import * as StatesModule from './states.js';
+import {upto2Digit} from './utility.js'
+
 //-----------------------------------------------------------------------------------
 const monthNames = [ "January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December" ];
 const clock=document.querySelector('.clock');
@@ -47,7 +49,8 @@ function init()//makes the digital clock
     {
         const d=new Date();
         date.textContent=`${d.getDate()} ${monthNames[d.getMonth()]} ${d.getFullYear()}`;
-        time.textContent=`${d.getHours()%12} : ${d.getMinutes()} : ${d.getSeconds()} ${d.getHours()>12?'pm':'am'}`;
+        const hour=upto2Digit((d.getHours()!=0)?d.getHours()%12:'12');
+        time.textContent=`${hour} : ${upto2Digit(d.getMinutes())} : ${upto2Digit(d.getSeconds())} ${d.getHours()>12?'pm':'am'}`;
     }
     setInterval(makeClock,1000);
 }
