@@ -7,12 +7,12 @@ function render_stopwatch(color)
 
 function hideStopwatch()
 {
-    stopwatch.style.transform='scale(1)';
+    stopwatch.style.display='none';
 }
 
 function showStopwatch()
 {
-    stopwatch.style.transform='scale(2)';
+    stopwatch.style.display='flex';
 }
 
 export {render_stopwatch,hideStopwatch,showStopwatch};

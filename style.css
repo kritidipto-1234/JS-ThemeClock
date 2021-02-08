@@ -27,7 +27,7 @@ body{
 }
 
 .palette_option_selected{
-    border:3px solid white;
+    border:3px solid rgb(255, 255, 255);
 }
 
 .current_widget_palette{
@@ -53,4 +53,39 @@ body{
 
 .active-widget{
     transform: scale(2);
+}
+
+.option_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.widget{
+    margin:20px;
+}
+
+.clock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.date{
+    margin: 40px;
+}
+.week{
+    color: gray;
+    margin: 10px;
+}
+.week>span{
+    margin: 6px;
+}
+.time{
+    margin:50px;
+    font-size: 60px;
 }

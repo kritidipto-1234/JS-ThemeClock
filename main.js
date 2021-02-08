@@ -26,6 +26,7 @@ function init()//to start app
     displayCorrectActiveOptions();
     ClockModule.render_clock(StatesModule.currentClockColor);
     StopwatchModule.render_stopwatch(StatesModule.currentStopwatchColor);
+    renderApp();
 }
 init();
 
@@ -44,6 +45,23 @@ function displayCorrectActiveOptions()//display correct active colour and widget
             if (StatesModule.currentWidget===e.getAttribute('value')) e.classList.add('widget_option_selected');
         });
 }
+
+function renderApp()//re renders both clock and stopwatch
+{
+    if (StatesModule.currentWidget==='clock')
+    {
+        ClockModule.render_clock(StatesModule.currentClockColor);
+        ClockModule.showClock();
+        StopwatchModule.hideStopwatch();
+    }
+    else
+    {
+        StopwatchModule.render_stopwatch(StatesModule.currentStopwatchColor);
+        ClockModule.hideClock();
+        StopwatchModule.showStopwatch();
+    }
+}
+
 
 colourPalette.addEventListener('click',function(e)
 {
@@ -65,19 +83,3 @@ currentWidgetPalette.addEventListener('click',function(e)
     renderApp();
 });
 
-function renderApp()//re renders both clock and stopwatch
-{
-    if (StatesModule.currentWidget==='clock')
-    {
-        ClockModule.render_clock(StatesModule.currentClockColor);
-        ClockModule.showClock();
-        StopwatchModule.hideStopwatch();
-    }
-    else
-    {
-        StopwatchModule.render_stopwatch(StatesModule.currentStopwatchColor);
-        ClockModule.hideClock();
-        StopwatchModule.showStopwatch();
-    }
-}
-renderApp();
