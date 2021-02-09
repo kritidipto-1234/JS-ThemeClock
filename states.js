@@ -1,4 +1,4 @@
-let currentWidget='stopwatch',currentClockColor='red',currentStopwatchColor='blue';
+let currentWidget='clock',currentClockColor='red',currentStopwatchColor='red';
 
 function changeClockColor(newColor)
 {

@@ -10,7 +10,7 @@ let time=0;
 let lapTime=0;
 let lapNo=0;
 //--------------------------------------------------------------------------------
-import {upto2Digit,renderTime} from './utility.js'
+import {upto2Digit,renderTime} from './myUtility.js'
 //---------------------------------------------------------------------------------
 init();
 function render_stopwatch(color)
@@ -85,7 +85,7 @@ function init()//makes the stopwatch functional
                 lapNo=0;
                 time=0;
                 lapTime=0;
-                timer.textContent='00 : 00 : 00';
+                timer.textContent='00:00:00';
                 leftControl.textContent='START';
                 rightControl.textContent='LAP';
             }
@@ -128,6 +128,7 @@ function createNewLap()
     const span1=document.createElement('span');
     span1.textContent=`LAP ${++lapNo}`
     const span2=document.createElement('span');
+    span2.textContent=`00:00:00`;
     lap.appendChild(span1);
     lap.appendChild(span2);
     lapList.prepend(lap);

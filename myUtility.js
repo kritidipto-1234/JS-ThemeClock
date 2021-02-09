@@ -15,7 +15,7 @@ function renderTime(time)
     const sec=Math.floor(time2/(100));
     time2=time2%100;
     const nano=time2;
-    return `${upto2Digit(min)} : ${upto2Digit(sec)} : ${upto2Digit(nano)}`;
+    return `${upto2Digit(min)}:${upto2Digit(sec)}:${upto2Digit(nano)}`;
 }
 
 export {upto2Digit,renderTime};
