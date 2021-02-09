@@ -1,13 +1,21 @@
+
+
 .palette_option{
     border-radius: 50%;
-    height:40px;
-    width:40px;
+    height:33px;
+    width:33px;
     cursor: pointer;
     margin: 5px;
 }
 
 /* clock */
 .time{
-    font-size:50px;
+    font-size:40px;
 }
 /* clock */
+
+/* stopwatch    */
+.lapList{
+    max-height: 230px;
+}
+/* stopwatch    */
