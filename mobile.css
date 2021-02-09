@@ -8,6 +8,9 @@
     margin: 5px;
 }
 
+.current_widget_option{
+    width:140px;
+}
 /* clock */
 .time{
     font-size:40px;
