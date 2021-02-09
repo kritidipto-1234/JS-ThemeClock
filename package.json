@@ -4,9 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build":"parcel build index.html --out-dir docs",
-    "deploy": "git add . && git commit -a -m 'made it node project and bundled with parcel' && git push"
+    "start": "parcel index.html --out-dir docs --public-url ./",
+    "build": "parcel build index.html --out-dir docs",
+    "deploy": "git add . && git commit -a -m 'some changes' && git push"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,5 @@
   "devDependencies": {
     "parcel": "^1.12.4"
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }
