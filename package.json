@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "parcel index.html --out-dir docs --public-url ./",
+    "start": "parcel index.html --out-dir docs --public-url ''",
     "build": "parcel build index.html --out-dir docs --public-url ./",
     "deploy": "git add . && git commit -a -m 'some changes' && git push"
   },
