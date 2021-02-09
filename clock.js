@@ -49,7 +49,7 @@ function init()//makes the digital clock
     {
         const d=new Date();
         date.textContent=`${d.getDate()} ${monthNames[d.getMonth()]} ${d.getFullYear()}`;
-        const hour=upto2Digit((d.getHours()!=0)?d.getHours()%12:'12');
+        const hour=upto2Digit((d.getHours()%12==0)?'12':d.getHours()%12);
         time.textContent=`${hour} : ${upto2Digit(d.getMinutes())} : ${upto2Digit(d.getSeconds())} ${d.getHours()>12?'pm':'am'}`;
     }
     setInterval(makeClock,1000);
