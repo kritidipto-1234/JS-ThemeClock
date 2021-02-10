@@ -420,6 +420,7 @@ function init() //to start app
     var colors = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ['red', 'blue', 'violet', 'yellow', 'aqua', 'pink', 'orange', 'brown'];
     colors.forEach(function (color) {
       var newOption = document.createElement('div');
+      newOption.addEventListener('click', function () {}, false);
       newOption.style.backgroundColor = color;
       newOption.setAttribute('value', color);
       newOption.classList.add('palette_option');
@@ -506,7 +507,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40463" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36455" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
