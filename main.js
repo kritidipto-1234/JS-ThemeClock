@@ -34,18 +34,26 @@ init();
 
 function displayCorrectActiveOptions()//display correct active colour and widget in palette after fetching states
 {
-    let currentOptionColor=(StatesModule.currentWidget==='clock')?StatesModule.currentClockColor:StatesModule.currentStopwatchColor;
-    
-    [...colourPalette.children].forEach(e=>
-        {
-            e.classList.remove('palette_option_selected');
-            if (currentOptionColor===e.getAttribute('value')) e.classList.add('palette_option_selected');
-        });
-    [...currentWidgetPalette.children].forEach(e=>
-        {
-            e.classList.remove('widget_option_selected')
-            if (StatesModule.currentWidget===e.getAttribute('value')) e.classList.add('widget_option_selected');
-        });
+    try
+    {
+        let currentOptionColor=(StatesModule.currentWidget==='clock')?StatesModule.currentClockColor:StatesModule.currentStopwatchColor;
+        
+        [...colourPalette.children].forEach(e=>
+            {
+                e.classList.remove('palette_option_selected');
+                if (currentOptionColor===e.getAttribute('value')) e.classList.add('palette_option_selected');
+            });
+        [...currentWidgetPalette.children].forEach(e=>
+            {
+                e.classList.remove('widget_option_selected')
+                if (StatesModule.currentWidget===e.getAttribute('value')) e.classList.add('widget_option_selected');
+            });
+    }
+    catch(e)
+    {
+        alert(e);
+    }
+
 }
 
 function renderApp()//re renders both clock and stopwatch
