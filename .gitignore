@@ -2,5 +2,3 @@ node_modules
 #no need for modules in github
 dist
 .cache
-package-lock.json
-#no need for this npm i created file too
