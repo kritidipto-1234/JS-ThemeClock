@@ -17,7 +17,7 @@ function init()//to start app
         colors.forEach(color=>
             {
                 const newOption=document.createElement('div');
-                newOption.addEventListener('click', function() {}, false );
+                newOption.addEventListener('click',function(){});
                 newOption.style.backgroundColor=color;
                 newOption.setAttribute('value',color);
                 newOption.classList.add('palette_option');
