@@ -1,25 +1,25 @@
 {
-  "name": "js-themeclock",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "start": "parcel index.html --out-dir docs --public-url ''",
-    "build": "parcel build index.html --out-dir docs --public-url ./",
-    "deploy": "git add . && git commit -a -m 'some changes' && git push"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kritidipto-1234/JS-ThemeClock.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kritidipto-1234/JS-ThemeClock/issues"
-  },
-  "homepage": "https://github.com/kritidipto-1234/JS-ThemeClock#readme",
-  "devDependencies": {
-    "parcel": "^1.12.4"
-  },
-  "dependencies": {}
+    "name": "js-themeclock",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start": "parcel index.html --out-dir docs --public-url ''",
+        "build": "parcel build index.html --out-dir docs --public-url ./",
+        "deploy": "git add . && git commit -a -m 'some changes' && git push"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kritidipto-1234/JS-ThemeClock.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kritidipto-1234/JS-ThemeClock/issues"
+    },
+    "homepage": "https://github.com/kritidipto-1234/JS-ThemeClock#readme",
+    "devDependencies": {
+        "parcel": "^1.12.4"
+    },
+    "dependencies": {}
 }
